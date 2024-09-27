@@ -1,75 +1,42 @@
-# Nuxt 3 Minimal Starter
+# 🌐 Meu Portfólio Web
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Bem-vindo(a) ao meu portfólio! Aqui você encontra uma coleção de meus projetos, habilidades e experiências na área de desenvolvimento web. 🌟
 
-## Setup
+<div align="center">
+  <img src="https://via.placeholder.com/150" alt="Logo" width="150"/>
+</div>
 
-Make sure to install the dependencies:
+---
 
-```bash
-# npm
-npm install
+## 🚀 Sobre Mim
 
-# pnpm
-pnpm install
+Sou um desenvolvedor web apaixonado por criar soluções criativas e funcionais. Com foco em **[tecnologias específicas que você usa]**, trabalho para entregar a melhor experiência para o usuário final. Confira abaixo algumas de minhas principais competências:
 
-# yarn
-yarn install
+- **Linguagens**: [HTML, CSS, JavaScript, TypeScript, etc.]
+- **Frameworks**: [Vue.js, Nuxt 3, React, etc.]
+- **Ferramentas**: [Node.js, Supabase, VS Code, etc.]
 
-# bun
-bun install
-```
+---
 
-## Development Server
+## 🔧 Tecnologias e Ferramentas
 
-Start the development server on `http://localhost:3000`:
+| Tecnologia             | Descrição                                                |
+| ---------------------- | -------------------------------------------------------- |
+| **Nuxt 3**             | Framework Vue.js para desenvolvimento de apps SSR e SPA. |
+| **Supabase**           | Plataforma para autenticação, banco de dados e APIs.     |
+| **Node.js**            | Ambiente de execução para JavaScript server-side.        |
+| **Visual Studio Code** | Editor de código favorito dos devs.                      |
 
-```bash
-# npm
-npm run dev
+---
 
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
+## 📂 Estrutura do Projeto
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+.
+├── /public         # Arquivos estáticos (imagens, ícones, etc.)
+├── /components     # Componentes Vue reutilizáveis
+├── /pages          # Páginas do site
+├── /layouts        # Layouts globais
+├── /assets         # Estilos, fontes, etc.
+└── README.md       # Este arquivo!
 ```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
