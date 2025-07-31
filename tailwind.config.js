@@ -11,13 +11,22 @@ export default {
   ],
   theme: {
     extend: {
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' }
+        }
+      },
+      animation: {
+        blink: 'blink 1s infinite'
+      },
       colors: {
-        primary: '#08070B' // agora use "bg-primary"
+        primary: '#08070B' // agora você pode usar bg-primary, text-primary, etc
       },
       fontFamily: {
-        sans: ['Manrope', 'sans-serif']
+        sans: ['Manrope', 'sans-serif'],
+        satoshi: ['Satoshi', 'sans-serif']
       }
     }
-  },
-  plugins: []
+  }
 }

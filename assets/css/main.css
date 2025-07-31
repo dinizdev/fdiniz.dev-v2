@@ -7,15 +7,6 @@ body {
   font-family: 'Manrope', sans-serif;
   @apply font-sans;
 }
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  background: linear-gradient(-45deg, #0f0f1f, #15151e, #10101a, #0d0c11);
-  background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite;
-}
 
 @keyframes gradientBG {
   0% {

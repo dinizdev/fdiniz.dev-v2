@@ -1,4 +1,10 @@
 <template>
+  <Head>
+    <link
+      rel="stylesheet"
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,700&display=swap"
+    />
+  </Head>
   <div class="min-h-screen flex flex-col bg-primary text-white">
     <!-- Navbar no topo -->
     <Navbar />
