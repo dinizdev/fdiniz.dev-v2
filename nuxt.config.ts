@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { defineNuxtConfig } from 'nuxt/config'; 
+
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
@@ -9,3 +10,5 @@ export default defineNuxtConfig({
     },
   },
 })
+
+console.log('✅ nuxt.config.ts carregado com compatibilityDate 2025-07-30')
