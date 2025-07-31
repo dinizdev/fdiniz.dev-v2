@@ -1,17 +1,20 @@
 <template>
   <header class="w-full text-white z-50">
     <nav
-      class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between relative"
+      class="relative max-w-6xl mx-auto px-4 py-4 flex items-center justify-between"
     >
       <!-- Logo -->
-      <NuxtLink to="/" class="text-xl font-bold">
-        <h1>Fdiniz.Dev</h1>
+      <NuxtLink
+        to="/"
+        class="text-xl font-bold whitespace-nowrap z-50 relative"
+      >
+        <h1>Felipe Diniz</h1>
       </NuxtLink>
 
-      <!-- Botão Hamburguer com quadradinhos e ícone X -->
+      <!-- Botão Hamburguer (mobile) -->
       <button
         @click="toggleMenu"
-        class="absolute top-4 right-4 md:hidden z-50 transition-transform duration-300"
+        class="md:hidden absolute right-4 top-4 z-50 transition-transform duration-300"
         :class="showMenu ? 'scale-105' : ''"
         aria-label="Toggle menu"
       >
@@ -31,17 +34,31 @@
         </div>
       </button>
 
-      <!-- Menu animado -->
+      <!-- Menu Desktop Centralizado -->
+      <div
+        class="hidden md:flex gap-6 text-sm uppercase items-center absolute left-1/2 -translate-x-1/2 top-1/2 -translate-y-1/2"
+      >
+        <NuxtLink
+          v-for="item in navItems"
+          :key="item.to"
+          :to="item.to"
+          class="px-2 py-1 text-gray-300 hover:text-white transition"
+        >
+          {{ item.label }}
+        </NuxtLink>
+      </div>
+
+      <!-- Menu Mobile -->
       <Transition name="fade-slide">
         <div
-          v-show="hydrated && (showMenu || isDesktop)"
-          class="absolute top-16 left-0 w-full flex flex-col items-center gap-4 py-4 md:static md:flex-row md:justify-center md:bg-transparent md:py-0 relative uppercase text-sm"
+          v-show="hydrated && showMenu"
+          class="absolute top-16 left-0 w-full flex flex-col gap-4 py-4 px-4 md:hidden text-sm uppercase items-start z-40"
         >
           <NuxtLink
             v-for="item in navItems"
             :key="item.to"
             :to="item.to"
-            class="px-4 py-2 text-gray-300 hover:text-white transition"
+            class="px-2 py-1 text-gray-300 hover:text-white transition"
             @click="closeMenu"
           >
             {{ item.label }}
