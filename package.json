@@ -7,7 +7,8 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint . --ext .js,.ts,.vue"
   },
   "dependencies": {
     "nuxt": "^4.0.2",
@@ -15,8 +16,19 @@
     "vue-router": "latest"
   },
   "devDependencies": {
+    "@eslint/js": "^9.32.0",
+    "@nuxt/eslint-config": "^1.7.1",
+    "@typescript-eslint/parser": "^8.38.0",
     "autoprefixer": "^10.4.20",
+    "eslint": "^9.32.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-vue": "^10.3.0",
     "postcss": "^8.4.49",
-    "tailwindcss": "^3.4.15"
+    "prettier": "^3.6.2",
+    "prettier-eslint": "^16.4.2",
+    "tailwindcss": "^3.4.15",
+    "typescript": "^5.8.3",
+    "vue-eslint-parser": "^10.2.0"
   }
 }

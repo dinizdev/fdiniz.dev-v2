@@ -10,5 +10,3 @@ export default defineNuxtConfig({
     },
   },
 })
-
-console.log('✅ nuxt.config.ts carregado com compatibilityDate 2025-07-30')
