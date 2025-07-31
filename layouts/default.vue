@@ -9,7 +9,7 @@
     <!-- Navbar no topo -->
     <Navbar />
     <!-- Conteúdo centralizado responsivamente -->
-    <main class="flex-1 flex items-center justify-center px-4 py-8 text-center">
+    <main class="flex-1 flex items-center justify-center text-center">
       <div class="w-full max-w-2xl">
         <slot />
       </div>
