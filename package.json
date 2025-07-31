@@ -11,13 +11,22 @@
     "lint": "eslint . --ext .js,.ts,.vue"
   },
   "dependencies": {
+    "@vueuse/core": "^13.6.0",
+    "@vueuse/motion": "^3.0.3",
+    "@vueuse/nuxt": "^13.6.0",
+    "gsap": "^3.13.0",
+    "lucide": "^0.534.0",
+    "lucide-vue-next": "^0.534.0",
     "nuxt": "^4.0.2",
+    "tsparticles": "^3.8.1",
     "vue": "latest",
     "vue-router": "latest"
   },
   "devDependencies": {
     "@eslint/js": "^9.32.0",
     "@nuxt/eslint-config": "^1.7.1",
+    "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.14.0",
     "@typescript-eslint/parser": "^8.38.0",
     "autoprefixer": "^10.4.20",
     "eslint": "^9.32.0",

@@ -1,9 +1,5 @@
 <template>
   <div>
-    <h1>hello word</h1>
+    <h1 class="text-4xl mb-4">Bem-vindo ao Fdiniz.Dev 👋</h1>
   </div>
 </template>
-
-<script lang="" sss setup></script>
-
-<style></style>
