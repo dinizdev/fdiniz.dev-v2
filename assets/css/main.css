@@ -1,11 +1,30 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* assets/css/main.css */
+@import "tailwindcss";
 
-body {
-  @apply bg-primary text-white;
-  font-family: 'Manrope', sans-serif;
-  @apply font-sans;
+@layer base {
+  :root {
+    --color-primary: #08070B;
+  }
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: var(--color-primary);
+  }
+  .text-primary {
+    color: var(--color-primary);
+  }
+}
+
+@layer components {
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
 }
 
 @keyframes gradientBG {

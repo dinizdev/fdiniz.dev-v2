@@ -1,4 +1,5 @@
-/** @type {import('tailwindcss').Config} */
+import type { Config } from 'tailwindcss/dist/lib.d.mts'
+
 export default {
   content: [
     './components/**/*.{js,ts,vue}',
@@ -20,13 +21,12 @@ export default {
       animation: {
         blink: 'blink 1s infinite'
       },
-      colors: {
-        primary: '#08070B' // agora você pode usar bg-primary, text-primary, etc
-      },
+
       fontFamily: {
         sans: ['Manrope', 'sans-serif'],
-        satoshi: ['Satoshi', 'sans-serif']
+        satoshi: ['Satoshi', 'sans-serif'],
+        ibm: ['IbmPlexMono', 'monospace']
       }
     }
   }
-}
+} satisfies Config
