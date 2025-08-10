@@ -1,13 +1,6 @@
-import { useClerk, useUser } from '@clerk/nuxt'
+import { defineNuxtRouteMiddleware, navigateTo } from '#app'
 
-export function useAuth() {
-  const { isSignedIn, signIn, signOut } = useClerk()
+export default defineNuxtRouteMiddleware(() => {
   const { user } = useUser()
-  
-  return {
-    isSignedIn,
-    signIn,
-    signOut,
-    user
-  }
-}
+  if (!user.value) return navigateTo('/admin')
+})
